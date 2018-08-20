@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             x:Class="FrondEndXamarin.Views.FlightResultsView"
+              BackgroundImage="result.jpg"
+             BackgroundColor="Transparent">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="airp.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:HomeViewModel/>
+    </ContentPage.BindingContext>
+
+
+
+    <ScrollView>
+    <StackLayout Spacing="10" Padding="10">
+        <Label Text="Flight Search Results" FontSize="Large"/>
+        <ListView x:Name="FlightView"
+                  ItemTapped="FlightView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell x:Name="yess" Text="{Binding AirportName}" TextColor="#29A3F7"
+                       Detail="{Binding FlightID}"
+                               DetailColor="#29A3F7" ImageSource="{Binding AirlinePicName}" 
+                                       />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    </ScrollView>
+
+    <!--<ListView BackgroundColor="Gray" SeparatorVisibility="None"  RowHeight="150" x:Name="FlightView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
+                        <Grid Padding="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="60"></RowDefinition>
+                                <RowDefinition Height="10"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"></ColumnDefinition>
+                                <ColumnDefinition Width="2*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                                <ColumnDefinition Width="3*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Grid.Column="0" Grid.Row="0" Source="{Binding AirlinePicName}" />
+                            
+                            <Label Grid.Row="0" Grid.Column="0" Text="Dept City"/>
+                            <Label Grid.Row="0" Grid.Column="1" Text="Dept Date"/>
+                            <Label Grid.Row="0" Grid.Column="2" Text="Dept Time"/>
+                            <Label Grid.Row="0" Grid.Column="3" Text="Arr City"/>
+
+                            
+                            <Label Grid.Row="1" Grid.Column="0" Text="{Binding DeptCity}" XAlign="Center" YAlign="Center" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
+                            <Label Grid.Row="1" Grid.Column="1" Text="{Binding DeptDate}" XAlign="Center" YAlign="Center" TextColor="Black" FontSize="Small"/>
+                            <Label Grid.Row="1" Grid.Column="2" Text="{Binding DeptTime}" XAlign="Center" YAlign="Center" TextColor="Black" FontAttributes="Bold" FontSize="Small"/>
+                            <Label Grid.Row="1" Grid.Column="3" Text="{Binding ArrCity}" XAlign="Center" YAlign="Center" TextColor="Black" FontSize="Small"/>
+                        </Grid>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
+
+</ContentPage>

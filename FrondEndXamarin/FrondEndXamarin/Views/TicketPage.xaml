@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrondEndXamarin.Views.TicketPage"
+             BackgroundImage="ticketF.jpg"
+             BackgroundColor="Transparent"
+             Title="Happy with what you see?">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="ticket.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="#BF043055" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <Label x:Name="TravellerName" TextColor="White"/>
+                    <Label x:Name="seatNO" TextColor="White"/>
+                    <Label x:Name="dCity" TextColor="White" />
+                    <Label x:Name="aCity" TextColor="White"/>
+                    <Label x:Name="dDate" TextColor="White"/>
+                    <Label x:Name="aDate" TextColor="White"/>
+                    <Label x:Name="dTime" TextColor="White"/>
+                    <Label x:Name="aTime" TextColor="White"/>
+                    <Label x:Name="cabin" TextColor="White"/>
+                    <Label x:Name="time" TextColor="White"/>
+                </StackLayout>
+            </Frame>
+            <Button Text="Go to Home Page" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

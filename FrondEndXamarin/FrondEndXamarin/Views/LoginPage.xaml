@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="FrondEndXamarin.Views.LoginPage"
+             BackgroundImage="b.jpg"
+             Title="Login">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="regUs.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:LoginViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+        <forms:AnimationView 
+	            x:Name="animationView" 
+	            Animation="loading.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                HeightRequest="100"
+                WidthRequest="500"/>
+        <BoxView HeightRequest="10"/>
+        <!--<Image HorizontalOptions="Start" WidthRequest="300" Source="travel.jpeg"/>-->
+        <Label x:Name="USname" TextColor="Black" FontSize="50" FontAttributes="Bold"></Label>
+        <Frame BackgroundColor="#BF043055" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                 <Entry x:Name="email" Text="{Binding EmailAddress}" Placeholder="EmailAddress"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                           Keyboard="Text"  
+                           TextColor="Black"/>
+                <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                           IsPassword="True"  
+                           TextColor="Blue"/>
+            </StackLayout>
+        </Frame>
+        <Button Command="{Binding LoginCommand}" Text="Login" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" Clicked="Button_Clicked"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

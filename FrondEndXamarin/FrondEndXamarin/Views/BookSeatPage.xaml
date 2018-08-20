@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             x:Class="FrondEndXamarin.Views.BookSeatPage"
+             BackgroundImage="seats.jpg"
+             BackgroundColor="Transparent"
+             Title="Select Seat(s)">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="seat.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:BookSeatModelView/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BorderColor" Value="#29A3F7"/>
+                <Setter Property="BorderRadius" Value="5"/>
+                <Setter Property="BorderWidth" Value="5"/>
+                <Setter Property="TextColor" Value="#29A3F7"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Orientation="Vertical" Spacing="50">
+            <forms:AnimationView 
+	                x:Name="animationView" 
+	                Animation="playing.json" 
+	                Loop="True" 
+	                AutoPlay="True"
+                    HeightRequest="170"
+                    WidthRequest="500"/>
+        <Grid HeightRequest="10"/>
+        <Frame BackgroundColor="#29A3F7" HasShadow="True" OutlineColor="Black" BorderColor="Black" CornerRadius="10" InputTransparent="True">
+            <StackLayout Orientation="Horizontal" Spacing="20">
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                                  Grid.Column="1"
+                                  HeightRequest="25"
+                                  HorizontalOptions="End"
+                                  Source="regUs.png"
+                                  VerticalOptions="Center"
+                                  WidthRequest="25" />
+                    <Picker x:Name="details" HeightRequest="50" 
+                                    Title="Travellers" TextColor="White" SelectedIndexChanged="details_SelectedIndexChanged" 
+                                        ItemsSource="name"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image
+                                  Grid.Column="1"
+                                  HeightRequest="25"
+                                  HorizontalOptions="End"
+                                  Source="fSit.png"
+                                  VerticalOptions="Center"
+                                  WidthRequest="25" />
+                    <Picker x:Name="seatA" HeightRequest="50" 
+                                    Title="Select Seat" TextColor="White" ItemsSource="seats" SelectedIndexChanged="seatA_SelectedIndexChanged"
+                            />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        <Button Text="Select" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" Clicked="Button_Clicked" 
+                Style="{StaticResource buttonStyle}"
+                Command="{Binding BookSeatCoomand}"/>
+    </StackLayout>
+
+</ContentPage>

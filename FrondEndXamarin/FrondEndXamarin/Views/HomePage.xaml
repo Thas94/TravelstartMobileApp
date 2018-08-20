@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="FrondEndXamarin.Views.HomePage"
+             BackgroundImage="home.jpg"
+             BackgroundColor="Transparent"
+             Title="Travel Start">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up" Order="Secondary" Priority="0" Clicked="ToolbarItem_Clicked"/>
+        <ToolbarItem Text="Sign In" Order="Secondary" Priority="0" Clicked="ToolbarItem_Clicked_1"/>
+        <ToolbarItem Text="new" Icon="acc.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:HomeViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BorderColor" Value="#29A3F7"/>
+                <Setter Property="BorderRadius" Value="5"/>
+                <Setter Property="BorderWidth" Value="5"/>
+                <Setter Property="TextColor" Value="#29A3F7"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="HorizontalOptions" Value="EndAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+            <forms:AnimationView 
+	            x:Name="animationView" 
+	            Animation="refresh.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                HeightRequest="170"
+                WidthRequest="500"/>
+
+            <BoxView HeightRequest="10"/>
+            <Frame BackgroundColor="Transparent" HasShadow="True" OutlineColor="Aquamarine" BorderColor="#29A3F7" CornerRadius="10" InputTransparent="True"  >
+                <StackLayout Orientation="Vertical" Spacing="10">
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                              Grid.Column="1"
+                              HeightRequest="25"
+                              HorizontalOptions="End"
+                              Source="takeF.png"
+                              VerticalOptions="Center"
+                              WidthRequest="25" />
+                            <Picker x:Name="DepartCity" SelectedIndexChanged="DepartCity_SelectedIndexChanged" HeightRequest="50" 
+                                Title="Departure City" TextColor="White" ItemsSource="acc.png"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                              Grid.Column="1"
+                              HeightRequest="25"
+                              HorizontalOptions="End"
+                              Source="land.png"
+                              VerticalOptions="Center"
+                              WidthRequest="25" />
+                            <Picker x:Name="ArrCity" SelectedIndexChanged="ArrCity_SelectedIndexChanged" HeightRequest="50" 
+                                Title="Arrival City" TextColor="White"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal">
+                            <Image
+                              Grid.Column="1"
+                              HeightRequest="25"
+                              HorizontalOptions="End"
+                              Source="calend.png"
+                              VerticalOptions="Center"
+                              WidthRequest="25" />
+                            <DatePicker MinimumDate="07/31/2018" MaximumDate="12/31/2018" x:Name="DeptDate" HeightRequest="50" 
+                                        DateSelected="DeptDate_DateSelected" TextColor="White"
+                                        />
+                        </StackLayout>
+                        <Image
+                              Grid.Column="1"
+                              HeightRequest="25"
+                              HorizontalOptions="End"
+                              Source="pipo.png"
+                              VerticalOptions="Center"
+                              WidthRequest="25" />
+                        <StackLayout Orientation="Horizontal">
+                            <Entry x:Name="Travellers" Placeholder="Num. Travellers"   
+                           PlaceholderColor="White" HeightRequest="50"     
+                           TextColor="White" />
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+            
+
+            <Button Command="{Binding SearchCommand}" Text="Search" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" Clicked="Button_Clicked_1" Style="{StaticResource buttonStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

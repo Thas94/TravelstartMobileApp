@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             x:Class="FrondEndXamarin.Views.PaymentPage"
+               BackgroundImage="pay.jpg"
+             BackgroundColor="Transparent"
+             Title="Who's paying?">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="money.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:PaymentViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+
+        <forms:AnimationView 
+	            x:Name="animationView" 
+	            Animation="dolar.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                HeightRequest="100"
+                WidthRequest="500"/>
+        <BoxView HeightRequest="10"/>
+        <Frame BackgroundColor="#BF043055" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+               
+                <Entry x:Name="Firstname" Text="{Binding FirstName}" Placeholder="FirstName" PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Entry x:Name="Surname" Text="{Binding Surname}" Placeholder="Surname" PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Entry x:Name="CardType" Text="{Binding CardType}" Placeholder="CardType" PlaceholderColor="White" HeightRequest="40" Keyboard="Email" TextColor="White"/>
+                <Entry x:Name="CardNumber" Text="{Binding CardNumber}" Placeholder="CardNumber" PlaceholderColor="White" HeightRequest="40" TextColor="White"/>
+                <Entry x:Name="SecurityCode" Text="{Binding SecurityCode}" Placeholder="SecurityCode"  PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Button Command="{Binding PaymentCommand}" Text="PAY" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
+            </StackLayout>
+           
+        </Frame>
+      
+      
+    </StackLayout>
+            </ScrollView>
+
+</ContentPage>

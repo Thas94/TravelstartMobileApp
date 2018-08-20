@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrondEndXamarin.Views.RegisterPage"
+             xmlns:vm="FrondEndXamarin.ViewModels"
+             xmlns:viewModels="clr-namespace:FrondEndXamarin.ViewModels"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             BackgroundImage="a.jpg"
+             Title="Register">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="new" Icon="add.png"/>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.BindingContext>
+        <viewModels:Register/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="Blue"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+
+        <forms:AnimationView 
+	            x:Name="animationView" 
+	            Animation="confetti.json" 
+	            Loop="True" 
+	            AutoPlay="True"
+                HeightRequest="100"
+                WidthRequest="500"/>
+        <BoxView HeightRequest="10"/>
+        <Frame BackgroundColor="#BF043055" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Entry x:Name="Title" Text="{Binding Title}" Placeholder="Title"  PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Entry x:Name="Firstname" Text="{Binding FirstName}" Placeholder="FirstName" PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Entry x:Name="Surname" Text="{Binding Surname}" Placeholder="Surname" PlaceholderColor="White" HeightRequest="40" Keyboard="Text" TextColor="White"/>
+                <Entry x:Name="Email" Text="{Binding EmailAddress}" Placeholder="EmailAddress" PlaceholderColor="White" HeightRequest="40" Keyboard="Email" TextColor="White"/>
+                <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Password" IsPassword="True" PlaceholderColor="White" HeightRequest="40" TextColor="White"/>
+                <Entry x:Name="MobileNo" Text="{Binding MobileNO}" Placeholder="MobileNo" PlaceholderColor="White" HeightRequest="40" TextColor="White"/>
+
+                    <Button Command="{Binding RegisterCommand}" Text="Sign Up" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
+            </StackLayout>
+           
+        </Frame>
+      
+      
+    </StackLayout>
+            </ScrollView>
+</ContentPage>
