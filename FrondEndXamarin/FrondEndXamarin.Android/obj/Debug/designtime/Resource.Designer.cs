@@ -5572,8 +5572,8 @@ namespace FrondEndXamarin.Droid
 			// aapt resource value: 0x7F010007
 			public const int b = 2130771975;
 			
-			// aapt resource value: 0x7F010038
-			public const int bb_bottom_bar_top_shadow = 2130772024;
+			// aapt resource value: 0x7F010039
+			public const int bb_bottom_bar_top_shadow = 2130772025;
 			
 			// aapt resource value: 0x7F010008
 			public const int BritishAirways = 2130771976;
@@ -6308,16 +6308,19 @@ namespace FrondEndXamarin.Droid
 			public const int travel = 2130772019;
 			
 			// aapt resource value: 0x7F010034
-			public const int update = 2130772020;
+			public const int upd = 2130772020;
 			
 			// aapt resource value: 0x7F010035
-			public const int user = 2130772021;
+			public const int update = 2130772021;
 			
 			// aapt resource value: 0x7F010036
-			public const int Usin = 2130772022;
+			public const int user = 2130772022;
 			
 			// aapt resource value: 0x7F010037
-			public const int whos = 2130772023;
+			public const int Usin = 2130772023;
+			
+			// aapt resource value: 0x7F010038
+			public const int whos = 2130772024;
 			
 			static Drawable()
 			{

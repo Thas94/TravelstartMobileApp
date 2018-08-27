@@ -109,7 +109,7 @@ namespace FrondEndXamarin.Views
             //await apiService.InsertSeatNO(travellerID,seat);
             count++;
 
-            PutSeat();
+           // PutSeat();
 
             if (count == name.Count)
             {

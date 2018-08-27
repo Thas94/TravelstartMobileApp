@@ -17,6 +17,7 @@ namespace FrondEndXamarin.Views
     {
         ApiService service = new ApiService();
         List<RegisterBindingModel> cities;
+        int ind = 0;
         public LoginPage()
         {
             InitializeComponent();
@@ -41,9 +42,10 @@ namespace FrondEndXamarin.Views
                 if (cities[i].Password == Password.Text && cities[i].EmailAddress == email.Text)
                 {
                     await DisplayAlert("You have successfully logged in as ", cities[i].FirstName + " " + cities[i].Surname, "ok");
-                    Settings.UserID = Convert.ToString(i);
+                    Settings.UserID = Convert.ToString(cities[i].UserID);
+                    //var ss = await service.GetUsersID(i);
                     Settings.confirm = "logged";
-                    await Navigation.PushAsync(new HomePage());
+                    await Navigation.PushAsync(new UpdateUserPage());
                     break;
                 }
                 /*else if (cities[i].Password != Password.Text && cities[i].EmailAddress != email.Text && i == cities.Count)
@@ -51,6 +53,7 @@ namespace FrondEndXamarin.Views
                     await DisplayAlert("Wrong EmailAddress or Password, please try again", "", "ok");
                 }*/
             }
+            
         }
     }
 }

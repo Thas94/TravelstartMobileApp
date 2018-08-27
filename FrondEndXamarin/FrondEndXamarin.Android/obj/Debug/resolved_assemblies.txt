@@ -10,6 +10,8 @@ C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXa
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\mscorlib.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Newtonsoft.Json.dll
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Messaging.Abstractions.dll
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Messaging.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Settings.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\System.Core.dll

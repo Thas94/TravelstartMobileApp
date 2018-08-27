@@ -170,6 +170,8 @@ C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXa
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\pay.jpg
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\ticket.png
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\ticketf.jpg
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\update.png
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\upd.png
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\R.cs.flag
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\R.txt
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\uploadflags.txt
@@ -253,11 +255,17 @@ C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXa
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\res\drawable\update.png
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\bin\Debug\Plugin.Messaging.Abstractions.pdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Plugin.Messaging.Abstractions.pdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\bin\Debug\Plugin.Messaging.dll.mdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Plugin.Messaging.dll.mdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Messaging.dll.mdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\android\assets\Plugin.Messaging.Abstractions.pdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\bin\Debug\FrondEndXamarin.Android.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\FrondEndXamarin.pdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\FrondEndXamarin.Android.dll.mdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\FormsViewGroup.dll.mdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Plugin.Messaging.dll.mdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Plugin.Settings.Abstractions.dll.mdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Plugin.Settings.dll.mdb
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin.Android\obj\Debug\linksrc\Xamarin.Forms.Platform.Android.dll.mdb

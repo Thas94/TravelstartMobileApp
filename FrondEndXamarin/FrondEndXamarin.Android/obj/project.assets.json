@@ -134,6 +134,20 @@
           "lib/MonoAndroid10/BottomBar.XamarinForms.dll": {}
         }
       },
+      "Xam.Plugins.Messaging/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Core.Utils": "27.0.2"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Messaging.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Messaging.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -493,6 +507,7 @@
           "Newtonsoft.Json": "11.0.2",
           "System.Net.Http": "4.3.3",
           "ThriveGmbH.BottomNavigationBar.XF": "1.0.2",
+          "Xam.Plugins.Messaging": "5.2.0",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.Forms": "3.0.0.561731"
         },
@@ -814,6 +829,45 @@
         "lib/portable-net45+win8+wpa81/BottomBar.XamarinForms.dll",
         "thrivegmbh.bottomnavigationbar.xf.1.0.2.nupkg.sha512",
         "thrivegmbh.bottomnavigationbar.xf.nuspec"
+      ]
+    },
+    "Xam.Plugins.Messaging/5.2.0": {
+      "sha512": "oTBg4tZjkkLHuUuXaybC/pwi0SugrJeyZ7Nq60IAxBliO7FMYaPq9mmmPQvCAEwEhtWaZAjbBzwG/I71CcQrmA==",
+      "type": "package",
+      "path": "xam.plugins.messaging/5.2.0",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Messaging.dll",
+        "lib/MonoAndroid10/Plugin.Messaging.pdb",
+        "lib/MonoAndroid10/Plugin.Messaging.xml",
+        "lib/UAP10/Plugin.Messaging.Abstractions.dll",
+        "lib/UAP10/Plugin.Messaging.Abstractions.pdb",
+        "lib/UAP10/Plugin.Messaging.Abstractions.xml",
+        "lib/UAP10/Plugin.Messaging.dll",
+        "lib/UAP10/Plugin.Messaging.pdb",
+        "lib/UAP10/Plugin.Messaging.pri",
+        "lib/UAP10/Plugin.Messaging.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Messaging.dll",
+        "lib/Xamarin.iOS10/Plugin.Messaging.xml",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Messaging.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Messaging.deps.json",
+        "lib/netstandard1.0/Plugin.Messaging.dll",
+        "lib/netstandard1.0/Plugin.Messaging.pdb",
+        "lib/netstandard1.0/Plugin.Messaging.xml",
+        "lib/tizen40/Plugin.Messaging.Abstractions.dll",
+        "lib/tizen40/Plugin.Messaging.Abstractions.pdb",
+        "lib/tizen40/Plugin.Messaging.Abstractions.xml",
+        "lib/tizen40/Plugin.Messaging.deps.json",
+        "lib/tizen40/Plugin.Messaging.dll",
+        "xam.plugins.messaging.5.2.0.nupkg.sha512",
+        "xam.plugins.messaging.nuspec"
       ]
     },
     "Xam.Plugins.Settings/3.1.1": {
@@ -1280,6 +1334,7 @@
       "FrondEndXamarin >= 1.0.0",
       "System.Net.Http >= 4.3.3",
       "ThriveGmbH.BottomNavigationBar.XF >= 1.0.2",
+      "Xam.Plugins.Messaging >= 5.2.0",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Android.Support.Design >= 27.0.2",
       "Xamarin.Android.Support.v4 >= 27.0.2",
@@ -1337,6 +1392,10 @@
           "ThriveGmbH.BottomNavigationBar.XF": {
             "target": "Package",
             "version": "[1.0.2, )"
+          },
+          "Xam.Plugins.Messaging": {
+            "target": "Package",
+            "version": "[5.2.0, )"
           },
           "Xam.Plugins.Settings": {
             "target": "Package",

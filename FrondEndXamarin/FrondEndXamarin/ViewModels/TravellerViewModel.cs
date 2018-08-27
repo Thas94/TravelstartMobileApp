@@ -27,7 +27,7 @@ namespace FrondEndXamarin.ViewModels
                 return new Command(async () =>
                 {
         
-                    var isSuccess = await apiService.InsertTraveller(Title, FirstName, MiddleName, Email, Surname, DOB);
+                    /*var isSuccess = await apiService.InsertTraveller(Title, FirstName, MiddleName, Email, Surname, DOB);
 
                     if (isSuccess)
                     {
@@ -36,7 +36,7 @@ namespace FrondEndXamarin.ViewModels
                     else
                     {
                         await App.Current.MainPage.DisplayAlert("Failed.", "", "ok");
-                    }
+                    }*/
                 });
             }
         }

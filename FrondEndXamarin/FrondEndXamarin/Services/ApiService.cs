@@ -14,7 +14,7 @@ namespace FrondEndXamarin.Services
 {
     public class ApiService
     {
-        string url = "http://192.168.2.116:45455/";
+        string url = "http://0ff206f6.ngrok.io/";
 
         internal async Task <bool> RegisterAsync(string title, string lastname, string firstname, string email, string password, string mobileNo)
         {
@@ -130,20 +130,7 @@ namespace FrondEndXamarin.Services
             return results;
         }
 
-        public async Task<bool> PutSeatNO(int id,TravellerModel traveller)
-        {
-            var client = new HttpClient();
 
-            var json = JsonConvert.SerializeObject(traveller);
-
-            HttpContent content = new StringContent(json);
-
-            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-
-            var response = await client.PutAsync(url + "api/FlightUsers1/" + id, content);
-
-              return response.IsSuccessStatusCode;
-        }
 
         internal async Task<bool> Payment(string firstname, string surname, string cardType, string cardNumber, string secuCode)
         {
@@ -179,6 +166,45 @@ namespace FrondEndXamarin.Services
             var cities = JsonConvert.DeserializeObject<List<RegisterBindingModel>>(response);
             //CitiesView.ItemsSource = cities;
             return cities;
+        }
+
+        /*public async Task<List<RegisterBindingModel>> GetUsersID(int id)
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetStringAsync(url + "api/UserInfo/" + id);
+            var cities = JsonConvert.DeserializeObject<List<RegisterBindingModel>>(response);
+            //CitiesView.ItemsSource = cities;
+            return cities;
+        }*/
+
+        public async Task<bool> PutSeatNO(int id, TravellerModel traveller)
+        {
+            var client = new HttpClient();
+
+            var json = JsonConvert.SerializeObject(traveller);
+
+            HttpContent content = new StringContent(json);
+
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            var response = await client.PutAsync(url + "api/FlightUsers1/" + id, content);
+
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> UpdateUser(int id, RegisterBindingModel traveller)
+        {
+            var client = new HttpClient();
+
+            var json = JsonConvert.SerializeObject(traveller);
+
+            HttpContent content = new StringContent(json);
+
+            content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+
+            var response = await client.PutAsync(url + "api/UserInfo/" + id, content);
+
+            return response.IsSuccessStatusCode;    
         }
     }
 }

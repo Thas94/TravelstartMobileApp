@@ -29,7 +29,7 @@ namespace FrondEndXamarin.ViewModels
                 {
                     await Application.Current.MainPage.Navigation.PushAsync(new TicketPage());
 
-                     var isSuccess = await apiService.Payment(FirstName, Surname, CardType, CardNumber, SecurityCode);
+                     /*var isSuccess = await apiService.Payment(FirstName, Surname, CardType, CardNumber, SecurityCode);
 
                      if (isSuccess)
                      {
@@ -40,7 +40,7 @@ namespace FrondEndXamarin.ViewModels
                      else
                      {
                          await App.Current.MainPage.DisplayAlert("Failed.", "", "ok");
-                     }
+                     }*/
                 });
             }
         }

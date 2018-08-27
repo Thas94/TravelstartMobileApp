@@ -15,6 +15,7 @@ C:\Users\Reverside SkillsRevo\source\repos\FrondEndXamarin\FrondEndXamarin\Frond
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\bin\Debug\netstandard2.0\FrondEndXamarin.deps.json
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\bin\Debug\netstandard2.0\FrondEndXamarin.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\bin\Debug\netstandard2.0\FrondEndXamarin.pdb
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.csprojAssemblyReference.cache
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\BookSeatPage.xaml.g.cs
@@ -26,11 +27,10 @@ C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXa
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\RegisterPage.xaml.g.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\TicketPage.xaml.g.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\TravellerPage.xaml.g.cs
+C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\UpdateUserPage.xaml.g.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.csproj.CoreCompileInputs.cache
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.AssemblyInfoInputs.cache
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.AssemblyInfo.cs
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.dll
 C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.pdb
-C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\FrondEndXamarin.csprojAssemblyReference.cache
-C:\Users\Reverside SkillsRevo\Desktop\FrondEndXamarin\FrondEndXamarin\FrondEndXamarin\obj\Debug\netstandard2.0\Views\UpdateUserPage.xaml.g.cs

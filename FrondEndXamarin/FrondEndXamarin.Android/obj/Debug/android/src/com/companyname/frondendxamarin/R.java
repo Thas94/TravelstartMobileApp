@@ -3211,13 +3211,13 @@ containing a value of this type.
         public static final int afers=0x7f020056;
         public static final int airp=0x7f020057;
         public static final int avd_hide_password=0x7f020058;
-        public static final int avd_hide_password_1=0x7f020153;
-        public static final int avd_hide_password_2=0x7f020154;
-        public static final int avd_hide_password_3=0x7f020155;
+        public static final int avd_hide_password_1=0x7f020154;
+        public static final int avd_hide_password_2=0x7f020155;
+        public static final int avd_hide_password_3=0x7f020156;
         public static final int avd_show_password=0x7f020059;
-        public static final int avd_show_password_1=0x7f020156;
-        public static final int avd_show_password_2=0x7f020157;
-        public static final int avd_show_password_3=0x7f020158;
+        public static final int avd_show_password_1=0x7f020157;
+        public static final int avd_show_password_2=0x7f020158;
+        public static final int avd_show_password_3=0x7f020159;
         public static final int b=0x7f02005a;
         public static final int bb_bottom_bar_top_shadow=0x7f02005b;
         public static final int britishairways=0x7f02005c;
@@ -3443,8 +3443,8 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f020138;
         public static final int notification_bg_normal_pressed=0x7f020139;
         public static final int notification_icon_background=0x7f02013a;
-        public static final int notification_template_icon_bg=0x7f020151;
-        public static final int notification_template_icon_low_bg=0x7f020152;
+        public static final int notification_template_icon_bg=0x7f020152;
+        public static final int notification_template_icon_low_bg=0x7f020153;
         public static final int notification_tile_bg=0x7f02013b;
         public static final int notify_panel_notification_icon_bg=0x7f02013c;
         public static final int pay=0x7f02013d;
@@ -3463,10 +3463,11 @@ containing a value of this type.
         public static final int tooltip_frame_dark=0x7f02014a;
         public static final int tooltip_frame_light=0x7f02014b;
         public static final int travel=0x7f02014c;
-        public static final int update=0x7f02014d;
-        public static final int user=0x7f02014e;
-        public static final int usin=0x7f02014f;
-        public static final int whos=0x7f020150;
+        public static final int upd=0x7f02014d;
+        public static final int update=0x7f02014e;
+        public static final int user=0x7f02014f;
+        public static final int usin=0x7f020150;
+        public static final int whos=0x7f020151;
     }
     public static final class id {
         public static final int ALT=0x7f090033;

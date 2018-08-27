@@ -5618,26 +5618,26 @@ namespace FrondEndXamarin.Droid
 			// aapt resource value: 0x7f020058
 			public const int avd_hide_password = 2130837592;
 			
-			// aapt resource value: 0x7f020153
-			public const int avd_hide_password_1 = 2130837843;
-			
 			// aapt resource value: 0x7f020154
-			public const int avd_hide_password_2 = 2130837844;
+			public const int avd_hide_password_1 = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int avd_hide_password_3 = 2130837845;
+			public const int avd_hide_password_2 = 2130837845;
+			
+			// aapt resource value: 0x7f020156
+			public const int avd_hide_password_3 = 2130837846;
 			
 			// aapt resource value: 0x7f020059
 			public const int avd_show_password = 2130837593;
 			
-			// aapt resource value: 0x7f020156
-			public const int avd_show_password_1 = 2130837846;
-			
 			// aapt resource value: 0x7f020157
-			public const int avd_show_password_2 = 2130837847;
+			public const int avd_show_password_1 = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int avd_show_password_3 = 2130837848;
+			public const int avd_show_password_2 = 2130837848;
+			
+			// aapt resource value: 0x7f020159
+			public const int avd_show_password_3 = 2130837849;
 			
 			// aapt resource value: 0x7f02005a
 			public const int b = 2130837594;
@@ -6314,11 +6314,11 @@ namespace FrondEndXamarin.Droid
 			// aapt resource value: 0x7f02013a
 			public const int notification_icon_background = 2130837818;
 			
-			// aapt resource value: 0x7f020151
-			public const int notification_template_icon_bg = 2130837841;
-			
 			// aapt resource value: 0x7f020152
-			public const int notification_template_icon_low_bg = 2130837842;
+			public const int notification_template_icon_bg = 2130837842;
+			
+			// aapt resource value: 0x7f020153
+			public const int notification_template_icon_low_bg = 2130837843;
 			
 			// aapt resource value: 0x7f02013b
 			public const int notification_tile_bg = 2130837819;
@@ -6375,16 +6375,19 @@ namespace FrondEndXamarin.Droid
 			public const int travel = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int update = 2130837837;
+			public const int upd = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int user = 2130837838;
+			public const int update = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int Usin = 2130837839;
+			public const int user = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int whos = 2130837840;
+			public const int Usin = 2130837840;
+			
+			// aapt resource value: 0x7f020151
+			public const int whos = 2130837841;
 			
 			static Drawable()
 			{
